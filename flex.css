@@ -1,0 +1,131 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0deg, 0%, 95%);
+  }
+main{
+    font-family: "Lexend Deca", sans-serif;
+    margin: 10px auto;
+    width: 1000px;
+    font-weight: 400;
+}.header {
+  font-size: 20px;
+  text-align: center;
+  margin: 30px;
+}
+.header a{
+  color: black;
+  border: 1px solid red;
+  padding:20px;
+  margin: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+a:hover{
+  color: rgb(15, 15, 15);
+  background-color: transparent;
+  border: transparent;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: hsl(0deg, 0%, 95%);
+}
+.main-container .box1{
+    background-color: hsl(31deg, 77%, 52%);
+    width: 100%;
+    height: 500px;
+    padding: 35px;
+    border-radius: 15px 0 0 15px;
+}
+/*.main-container .box1 a{
+    text-decoration: none;
+    color: hsl(31deg, 77%, 52%);
+}*/
+.main-container .box2{
+    background-color: hsl(184deg, 100%, 22%);
+    width: 100%;
+    height: 500px;
+    padding: 35px;
+}
+/*.main-container .box2 a{
+    text-decoration: none;
+    color: hsl(184deg, 100%, 22%);
+}*/
+.main-container .box3{
+    background-color: hsl(179deg, 100%, 13%);
+    width: 100%;
+    height: 500px;
+    padding: 35px;
+    border-radius: 0 15px 15px 0;
+}
+/*.main-container .box3 a{
+    text-decoration: none;
+    color: hsl(179deg, 100%, 13%);
+}*/
+.main-container  h1{
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+}
+p{
+    height: 200px;
+    font-size: 15px;
+    word-spacing: 3px;
+    line-height: normal;
+}
+.main-container .btn{
+    background-color: hsl(0deg, 0%, 95%);
+    padding: 12px 0;
+    margin: 30px 0;
+    text-align: center;
+    border-radius: 35px;
+    border: 2px solid transparent;
+    width: 150px;
+    font-size: 15px;
+}
+.main-container .btn:hover{
+    background-color: transparent;
+    color: hsla(0deg, 0%, 100%, 0.75);
+    border: 2px solid hsla(0deg, 0%, 100%, 0.75);
+  }
+/*.main-container   .btn a:hover{
+    background-color: transparent;
+    color: hsla(0deg, 0%, 100%, 0.75);
+  }*/
+
+   
+  @media screen and (max-width: 430px) {
+    main {
+      width: 375px;
+    }
+  
+    .main-container {
+      width: 370px;
+      flex-direction: column;
+      align-items: center;
+      margin: 90px auto;
+    }
+    .main-container div {
+      width: 320px;
+      padding: 40px auto;
+    }
+    .main-container .btn:hover {
+      display: none;
+    }
+    .main-container .box1 {
+      border-radius: 15px 15px 0 0;
+    }
+    .main-container .box3 {
+      border-radius: 0 0 15px 15px;
+    }
+  }

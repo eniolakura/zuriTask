@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    font-size: 20px;
+    text-align: center;
+    margin: 100px;
+}
+a{
+    color: red;
+    border: 1px solid white;
+    padding:20px;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+a:hover{
+    color: white;
+    background-color: transparent;
+    border: transparent;
+}
+body{
+    background-color: black;
+    justify-content: center;
+    place-items: center;
+   min-height: 100vh;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "a a b "
+    "c d d"
+    "c e e";
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+main div{
+    padding: 4em;
+    text-align: center;
+}
+.grid1{
+    background-color: orangered;
+    grid-area: a;
+}
+.grid2{
+    background-color: rgb(243, 136, 13);
+    grid-area: b;
+    padding: 3em;
+}
+.grid3{
+    background-color: green;
+    grid-area: c;
+}
+.grid4{
+    background-color: rgb(104, 131, 250);
+    grid-area: d;
+}
+.grid5{
+    background-color: rgb(104, 131, 250);
+    grid-area: e;
+}
+
+@media screen and (max-width:470px) {
+    main{
+        width: 370px;
+    }
+}
